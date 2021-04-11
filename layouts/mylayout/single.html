@@ -1,0 +1,22 @@
+{{define "main"}}
+    <div  class=" my-post-content " style="width: 100%">
+        {{ .Content }}
+    </div>
+
+    <script>
+        $(".my-post-content").css("opacity", 0)
+        document.querySelector("#myframe").addEventListener( "load", function(e) {
+            iFrameResize({ 
+                log: true,
+                heightCalculationMethod: 'lowestElement',
+                minSize:100,
+                initCallback: function(frame) {
+                    $(".my-post-content").css("opacity", 1)
+                }
+            }, '#myframe')
+            setTimeout(function() {
+                
+            }, 500)
+        })
+    </script>
+{{end}}

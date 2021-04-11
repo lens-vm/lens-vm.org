@@ -1,0 +1,69 @@
+baseurl      = "https://lens-vm.org"
+title        = "LensVM"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 10
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "A portable runtime for data translation, built with WebAssembly."
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = true
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = false
+
+  enableThemeToggle = true
+
+  footerRight = "Made with &#10084; by <a href=\"https://source.network\">Source Network</a>"
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/lens-vm"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+[languages]
+  [languages.en]
+    title = "LensVM"
+    subtitle = "A portable virtual machine for data translation, built with WebAssembly"
+    keywords = ""
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ cd /home/lens-vm"
+      logoHomeLink = "/"
+    # or
+    #
+    #  path = "/img/logo.PNG"
+    # alt = "Your example logo alt text"
+
+  # And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "github"
+    name       = "GitHub"
+    url        = "https://github.com/lens-vm"
+  [[menu.main]]
+    identifier = "spec"
+    name       = "Spec"
+    url        = "/spec/"
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "about/"
